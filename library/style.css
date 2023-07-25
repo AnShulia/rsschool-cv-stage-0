@@ -1,0 +1,254 @@
+*{                      
+    border: 0;
+    margin: 0;
+    max-width: 1440px;
+    border:1px rgba(red, green, blue, alpha) dotted;
+    box-sizing: border-box;
+    
+}
+.privatstyle{ 
+    border: 1px red solid;
+    border: 1px rgba rgb(9, 0, 32) solid;
+    color:aqua;
+}
+/*Правило для всей странички*/
+.line{
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #0C0C0E;
+    margin-left: auto; margin-right: auto; 
+    margin-top: 20px; margin-bottom: 40px;
+}
+h2{
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 20px; margin-bottom: 20px;
+    margin-left: auto; margin-right: auto; 
+
+}
+p{
+    color: #000;
+    font-size: 30px;
+    font-family: Inter;
+}
+/*HEAD*/
+.header{
+    background: #0C0C0E;
+    color:#FFFFFF;
+    width: auto;
+    height: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;  
+}
+.header h1{ 
+    margin-top: 20px;
+    margin-left: 20px; 
+
+}
+.header ul{
+    display: inline-flex;
+    width: 584px; height: 50px;
+    margin-top: 20px;  margin-left: 254px; 
+    
+    font-size: 25px;
+    line-height: 50px;
+    white-space:nowrap;
+    text-align: center;
+    font-family: Inter;
+    justify-content: space-between;
+
+}
+.header li:hover{            /*Эффект ховера по тз*/
+    border-bottom: 3px solid #571d1d;
+}
+.icon-profile{
+    width: 28px;
+    height: 28px;
+    margin-top: 31px;
+    margin-left: 40px; 
+    margin-right: 10px;
+}
+/*End head*/
+/*Погнало тело*/
+main{
+    background: #FFF;
+    width: 100%;
+    width: 1440px;
+    margin:0;
+}
+main .welkome{ 
+    background-image: url('./assets/img/welcome.png');
+    background-color: #c7b39b;
+    background-size: no-repeat;
+    height: 600px;
+    width: 1440px;    
+}
+main .about{
+    width: 1440px;    
+    width: 100%;
+    height: 837px;
+}
+main .about__pagination{ 
+    margin: 40px 686px;
+}
+main .favorites{ border: 1px rgb(156, 20, 247) solid;
+    height: auto;  width: 1440px;
+    margin:0;
+}
+main .favorites__bttn label, input{
+     font-size: 30px;
+     margin-right:10px ;
+     margin-left: 50px;
+     display:inline-flex;
+     justify-content: space-between;
+}
+main .favorites__item{border: 6px rgb(102, 8, 97) solid;
+    
+    height: 1150px; width: 1440px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 20px;
+
+    
+}
+
+main .firstbook{border: 1px solid #000;
+   width: 550px;
+   height: 555px;
+   margin-left: 10px;
+   display:block;
+   
+}
+main .firstbook img{
+    display: block;
+    position:absolute;
+    left: 395px ; top: 1948px;
+}
+main .bttnone{
+    display: block;
+    position:absolute;
+    left:50px ; top: 2195px;
+
+}
+
+main .secondbook{border: 1px solid #000;
+    width: 550px; height: 555px;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+main .secondbook img{
+    display: block;
+    position:absolute;
+    left: 395px ; top: 2523px;
+}
+main .bttntwo{
+    display: block;
+    position:absolute;
+    left:50px ; top: 2770px;
+}
+main .thirdbook{border: 1px solid #000;
+    width: 550px; height: 555px;
+    margin-right: 10px;
+}
+main .thirdbook img{
+
+    display: block;
+    position:absolute;
+    left: 1235px ; top: 1948px;
+
+}
+main .bttnthree{
+    display: block;
+    position:absolute;
+    left:910px ; top: 2195px;
+
+
+}
+main .fourthbook{border: 1px solid #000;
+    width: 550px; height: 555px;
+}
+main .fourthbook img{
+    display: block;
+    position:absolute;
+    left: 1235px; top: 2523px;
+
+}
+main .bttnfourth {
+    display: block;
+    position:absolute;
+    left:910px ; top: 2770px;
+}
+/*Общие*/
+main .favorites__item h3{
+    font-family: Inter;
+    text-align: left;
+    font-size: 29px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+main .favorites__item h4{
+    font-family: Inter;
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+main .favorites__item span{
+    display:block;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding-left: 30px;padding-top: 20px; padding-bottom: 10px;
+}
+main .favorites__item p{
+    display:inline-block;
+    width: 355px; height: auto; max-height: 320px;
+    font-size: 25px;
+    padding: 10px 10px 0px 30px;
+    text-transform: capitalize;
+}
+main .favorites__item button{
+    width: 75px;  height: 30px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    padding: 1px 1px 1px 1px;
+}
+
+
+
+
+
+    
+
+
+  
+
+
+
+
+
+ 
+
+
+    
+/*library/assets/img/welcome.png*/
