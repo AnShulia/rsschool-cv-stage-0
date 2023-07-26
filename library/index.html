@@ -21,10 +21,11 @@
             </nav>
             <a class="icon-profile" href="https://rs.school/js/"><img src="./assets/svg/icon-profile.svg" alt="Icon" width="28" height="28" > </a>  
         </div>
-    </header><!--ТЗ:Блок мэин-->    
-    <main>
-        <section class="welkome"></section>  <!--ТЗ:секция№1 велком.-->
-        <section class="about"> <!--ТЗ:секция№2 aboute.-->
+    </header>     
+    <main>                        <!--ТЗ:Блок мэин-->  
+        <section class="welkome"> <!--ТЗ:секция№1 welkome.-->
+        </section> 
+        <section class="about">   <!--ТЗ:секция№2 aboute.-->
             <h2>About</h2>
             <div class="line"></div>
             <p style="text-align: center; margin-bottom: 20px;">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
@@ -35,8 +36,9 @@
             </div>
             <div class="about__pagination"><img src="./assets/svg/carousel-pagination.svg" alt="carousel "width="68" height="16" > </div> 
         </section>
-        <section class="favorites">
+        <section class="favorites"><!--ТЗ:секция№3 favorites.-->
             <h2>Favorites</h2>
+            <div class="line"></div>
             <conteiner class="line"></conteiner>
             <p><b>Pick favorites of season</b></p>
             <form class="favorites__bttn">
@@ -47,7 +49,7 @@
                 </form>
                 <div class="favorites__item">
 
-                    <div class="firstbook">
+                    <div class="bookone">
                         <span>Staff Picks</span>
                         <h3>The Book Eaters</h3>
                         <h4> By Sunyi Dean</h4>
@@ -56,7 +58,7 @@
                         <button class="bttnone">Buy</button>
                     </div>
 
-                    <div class="secondbook">
+                    <div class="twobook">
                         <span>Staff Picks</span>
                         <h3>Dante: Poet of the Secular World</h3>
                         <h4>By Erich Auerbach</h4>
@@ -65,7 +67,7 @@
                         <button class="bttntwo">Buy</button>
                     </div>
 
-                    <div class="thirdbook">
+                    <div class="threebook">
                         <span>Staff Picks</span>
                         <h3>The Book Eaters</h3>
                         <h4>By Sunyi Dean</h4>
@@ -74,21 +76,122 @@
                         <button class="bttnthree">Buy</button>
                     </div>
 
-                    <div class="fourthbook">
+                    <div class="fourhbook">
                         <span>Staff Picks</span>
                         <h3>The Book Eaters</h3>
                         <h4> By Sunyi Dean</h4> 
                         <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
                         <img src="./assets/img/book4.png" alt="book" width="200" height="300">
-                        <button class="bttnfourth">Buy</button>
+                        <button class="bttnfour">Buy</button>
                    </div>
         </div>
 
 
         </section>
+        <section class="coffeshop"><!--ТЗ:секция№4 coffeshop.-->
+            <h2>Coffee shop</h2>
+            <div class="line"></div>
+            <p class="descript">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+                <div class="coffedeserts">
+                    <h3>Coffee & Tea</h3>
+                    <h3>Desserts & Cakes</h3></div>
+                    <div class="menu"></div>
+                    <div class="coffe">
+                        <h3>TCoffee & ea</h3>
+                        <p>Cold Brew Coffee    $3</p>
+                        <p>French Press Pot      $5</p>
+                        <p>Espresso $2</p><p></p>
+                        <p>Cappuccino $4</p><p></p>
+                        <p>Hot tea $2</p><p></p>
+                        <p>Cold tea $2</p><p></p>
+                    </div>
+                    <div class="deserts">
+                        <h3>Desserts & Cakes </h3>
+                        <span><p>Forest Gateau</p><p>$16</p></span>
+                        <p>Blue Moon$16</p><p></p>
+                        <p>Truffle Cake$15</p><p></p>
+                        <p>Chocolate Cake$18</p><p></p>
+                        <p>Poet s Dream Cake$16</p><p></p>
+                        <p>Pineapple Cake$14</p><p></p>
+                     </div>
+                    </div>
+                    </section>
+        <section class="OurContacts"> <!--ТЗ:секция№5 OurContacts.-->
+            <h2>Our Contacts</h2>
+            <div class="line"></div>
+            <div class="contactmap">
+            <div class="Contacts">
+                <p style="margin-bottom:40px"><b>For all Library inquiries:</b></p>
+                <p>Please call <a href="tel:+6177302370">(617) 730-2370</a></p>
+                <p>For TTY service, please call <a href="tel:+6177302370">(617) 730-2370</a></p>
+                <p>Putterham Library: <a href="tel:+6177302385">(617) 730-2385</a></p>
+                <p style="margin-bottom:40px; margin-top:40px;"><b>Senior Staff</b></p>
+                <p>Library Director:<b>Amanda Hirst</b></p>
+            </div>
+            <div class="map">
+               <img src="./assets/img/rectangle-4.png" alt="map"> </div>
+            </div>
 
+
+
+
+
+        </section>
+        <section class="Digital Library Cards"> <!--ТЗ:секция№6 Digital Library Cards.-->
+            <h2>Digital Library Cards</h2>
+            <div class="line"></div>
+            <div class="digital">
+                <div class="digitalleft">
+                    <h3>Find your Library card</h3>
+                        <div class="digitalborder">
+                        <div class="digitalbackgroung">
+                    <p>Brooklyn Public Library</p>
+                    <form>
+                        <input type="text" id="name" placeholder="Reader's name" class="inputname">
+                        <input type="numbercard" id="namber" placeholder="Card number" class="inputnumber">
+                    </form>
+                         </div>
+                    <button>Check the card</button>
+                        </div>
+                </div>
+                <div class="get">
+                    <h4>Get a reader card</h4>
+                    <p>You will be able to see a reader card after logging into account or you can register a new account</p>
+                    <button class="bttnsign">Sign Up</button>
+                    <button class="bttnlog">Log in</button>
+                </div>
+            </div>
+        </section>            
     </main>
-    <footer></footer><!--ТЗ:Блок футер-->   
+    <footer><!--ТЗ:Блок футер-->   
+        <div class="footer">
+            <div class="footertop">
+            <div class="topleft">
+                <p>286 Cadman Plaza, New York, NY 11238, United States</p>
+                <nav>
+                    <ul style="list-style: none">
+                <a href=""><img src="./assets/svg/u-twitter-alt.svg" alt="twitter"></a>
+                <a href=""><img src="./assets/svg/u-instagram.svg" alt="instagram"></a>
+                <a href=""><img src="./assets/svg/u-facebook-f.svg" alt="u-facebook-f"></a>
+                    </ul>
+                    </nav>
+            </div>
+            <div class="topright">
+                <p>Mon - Fri<br>
+                    08:00 am - 07:00 pm</p>
+                <p>Sat - Sun<br>
+                    10:00 am - 06:00 pm</p>
+            </div>
+        </div>
+            <div class="line3"></div>
+            <div class="bottom">
+            <p>2023</p>
+            <p>The Rolling Scopes School</p>
+            <p>Username</p>
+            </div>
+        </div>
+
+    </footer>
     
 </body>
 </html>

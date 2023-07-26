@@ -97,7 +97,7 @@ main .about{
 main .about__pagination{ 
     margin: 40px 686px;
 }
-main .favorites{ border: 1px rgb(156, 20, 247) solid;
+main .favorites{ 
     height: auto;  width: 1440px;
     margin:0;
 }
@@ -108,7 +108,7 @@ main .favorites__bttn label, input{
      display:inline-flex;
      justify-content: space-between;
 }
-main .favorites__item{border: 6px rgb(102, 8, 97) solid;
+main .favorites__item{
     
     height: 1150px; width: 1440px;
     flex-shrink: 0;
@@ -119,18 +119,16 @@ main .favorites__item{border: 6px rgb(102, 8, 97) solid;
     flex-wrap: wrap;
     text-align: left;
     gap: 20px;
-
-    
 }
 
-main .firstbook{border: 1px solid #000;
+main .bookone{border: 1px solid #000;
    width: 550px;
    height: 555px;
    margin-left: 10px;
    display:block;
    
 }
-main .firstbook img{
+main .bookone img{
     display: block;
     position:absolute;
     left: 395px ; top: 1948px;
@@ -139,15 +137,13 @@ main .bttnone{
     display: block;
     position:absolute;
     left:50px ; top: 2195px;
-
 }
-
-main .secondbook{border: 1px solid #000;
+main .twobook{border: 1px solid #000;
     width: 550px; height: 555px;
     margin-left: 10px;
     flex-shrink: 0;
 }
-main .secondbook img{
+main .twobook img{
     display: block;
     position:absolute;
     left: 395px ; top: 2523px;
@@ -155,13 +151,13 @@ main .secondbook img{
 main .bttntwo{
     display: block;
     position:absolute;
-    left:50px ; top: 2770px;
+    left:50px ; top: 2810px;
 }
-main .thirdbook{border: 1px solid #000;
+main .threebook{border: 1px solid #000;
     width: 550px; height: 555px;
     margin-right: 10px;
 }
-main .thirdbook img{
+main .threebook img{
 
     display: block;
     position:absolute;
@@ -175,21 +171,21 @@ main .bttnthree{
 
 
 }
-main .fourthbook{border: 1px solid #000;
+main .fourhbook{border: 1px solid #000;
     width: 550px; height: 555px;
 }
-main .fourthbook img{
+main .fourhbook img{
     display: block;
     position:absolute;
     left: 1235px; top: 2523px;
 
 }
-main .bttnfourth {
+main .bttnfour {
     display: block;
     position:absolute;
     left:910px ; top: 2770px;
 }
-/*Общие*/
+/*Общие favorit*/
 main .favorites__item h3{
     font-family: Inter;
     text-align: left;
@@ -233,7 +229,243 @@ main .favorites__item button{
     border-radius: 2px;
     padding: 1px 1px 1px 1px;
 }
+/*coffe shop*/
+.descript { 
+padding:40px 0 40px 0; 
+margin: 0 20px 0 20px;
+text-align: left;
+}
+.coffedeserts { border:4px rgb(233, 95, 15) solid;
+    display: flex;
+    width: 100%;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content:space-between ;
+    margin: 20px 20px 40px 20px;
+    gap: 40px;
+    flex-wrap: nowrap;
 
+}
+.menu
+.coffe{border:1px rgb(31, 141, 64) solid;
+    width:520px;
+    
+    
+    height: 40px;
+    
+
+    
+}
+.deserts{border:1px rgb(40, 14, 155) solid;
+    text-align: right;
+    width: 50%;
+}
+
+.coffedeserts h3{
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.coffedeserts p{ border:1px rgb(233, 95, 15) solid;
+}
+.line2{
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+}
+
+/*КОНТАТЫ*/
+.OurContacts {
+   margin:20px 20px 40px 20px;
+}
+.contactmap{
+    display:flex;
+    padding:20px 10px 40px 0;
+}
+.Contacts{
+    width: 50%; height: 414px;
+    text-transform: capitalize; letter-spacing: 2px;
+    font-family: Inter;
+}
+.Contacts p{
+    margin-bottom: 20px;
+   } 
+.map{
+    width: 50%;
+}
+/*END CONTACTS*/
+/*Digital Library Cards*/
+.digital{
+    width: 50%;
+    display:flex;
+    height: 614px;
+    width: 1440px;
+}
+/*левая сорона*/
+.digitalleft{
+    width: 50%;
+    justify-content: center; 
+    text-align: start;
+}
+.digitalleft h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.digitalborder {
+    border: 3px solid #BB945F;
+    width: 600px;
+    height: 386px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;  
+    box-sizing: border-box;
+}
+.digitalbackgroung{
+    background: #BB945F;
+    width: 560px;
+    height: 272px;
+    flex-shrink: 0;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+ 
+}
+.digitalbackgroung p{
+    font-family: Forum;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    padding: 20px 246px 202px 20px;
+    font-size: 30px;
+    white-space:nowrap;
+}
+.digitalbackgroung input{border:1px red solid; /*Колхоз, но как получилос, если кто подкинет идей как правильно, будет кул*/
+    width: 520px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; margin-bottom: -20px;
+    margin-left: -555px;    
+}
+.digitalborder button{
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 300px; height: 44px;
+    margin-left: 150px; 
+    margin-bottom: 20px;  
+}
+/*Правая сорона*/
+.get{
+    width: 50%;
+    text-align: right;
+    font-size: 20px;
+    height: 614px;
+}
+.get h4{
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    font-family: Forum;
+    margin-bottom:35px ;
+}
+.get p{
+    font-family: Inter;
+    width: 456px;
+    letter-spacing: 0.4px;
+    line-height: 40px;
+    text-align: right;
+    float: right;
+}
+.get button{
+    width: 80px; height: 40px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.bttnsign{
+   position: relative;
+   left: 530px;
+   top: 170px;
+}
+.bttnlog{
+    position: relative;
+   left: 350px;
+   top: 170px;
+}
+/*Конец мэйна*/
+/*Идем в подвал*/
+.footer p{ /*Отчего-то нужно писать отдельным(мол, в хедере работал колор для всей секции, а здесь нет*/
+    color: #FFF;    
+}
+.footer{
+    background: #0C0C0E;
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+}
+.footertop{
+    display: flex;
+    width: 100%;
+    
+}
+.topleft{
+    width: 50%;
+}
+.topleft p{
+    font-size: 20px;
+    width: 229px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.topleft ul{
+     display: inline-flex;
+     gap:15px;
+     margin-top: 18px; margin-left: -20px;;
+}
+.topright{ 
+    width: 50%;
+   
+}
+.topright p{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: Inter;
+    width: 456px;
+    letter-spacing: 0.4px;
+    line-height: 40px;
+    text-align: right;
+    float: right;
+}
+.line3{
+    width: 1400px;
+    height: 1px;
+    background: #FFF;
+    margin-top: 20px;
+    flex-shrink: 0;
+    
+}
+.bottom{
+    height: 110px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 44px 20px;  
+}
+/*Happy end, наверное..*/
 
 
 
