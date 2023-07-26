@@ -258,7 +258,7 @@ text-align: left;
 .deserts{
     width: 50%; 
 }
-.coffe span{
+.spancoffe{
     display: inline-flex;
     width: 100%; height: 50px;
     gap:60px;
@@ -271,7 +271,7 @@ text-align: left;
     justify-content: space-around;
     margin-top: 20px; margin-bottom: 20px;
 }
-.deserts span{
+.spandeserts{
     display: inline-flex;
     width: 100%; height: 50px;
     gap:60px;

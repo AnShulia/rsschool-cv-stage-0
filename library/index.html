@@ -12,34 +12,33 @@
             <h1>Brooklyn Public Library</h1>  <!--ТЗ:h1-->
             <nav>
             <ul style="list-style: none">
-                <li><a href>About</a></li>
-                <li><a href>Favorites</a></li>
-                <li><a href>Coffee shop</a></li>
-                <li><a href>Contacts</a></li>
-                <li><a href>Library Card</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Favorites</a></li>
+                <li><a href="">Coffee shop</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Library Card</a></li>
             </ul>
             </nav>
             <a class="icon-profile" href="https://rs.school/js/"><img src="./assets/svg/icon-profile.svg" alt="Icon" width="28" height="28" > </a>  
         </div>
     </header>     
     <main>                        <!--ТЗ:Блок мэин-->  
-        <section class="welkome"> <!--ТЗ:секция№1 welkome.-->
+        <section class="welkome"><div></div> <!--ТЗ:секция№1 welkome.-->
         </section> 
         <section class="about">   <!--ТЗ:секция№2 aboute.-->
             <h2>About</h2>
             <div class="line"></div>
             <p style="text-align: center; margin-bottom: 20px;">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
             <div class="about__image">
-                <img src="./assets/img/image-1.png">
-                <img src="./assets/img/image-2.png">
-                <img src="./assets/img/image-3.png"> 
+                <img src="./assets/img/image-1.png" alt="image">
+                <img src="./assets/img/image-2.png" alt="image">
+                <img src="./assets/img/image-3.png" alt="image"> 
             </div>
-            <div class="about__pagination"><img src="./assets/svg/carousel-pagination.svg" alt="carousel "width="68" height="16" > </div> 
+            <div class="about__pagination"><img src="./assets/svg/carousel-pagination.svg" alt="carousel" width="68" height="16" > </div> 
         </section>
         <section class="favorites"><!--ТЗ:секция№3 favorites.-->
             <h2>Favorites</h2>
             <div class="line"></div>
-            <conteiner class="line"></conteiner>
             <p><b>Pick favorites of season</b></p>
             <form class="favorites__bttn">
                 <label><input type="radio" name="sck"><b>Winter</b></label>
@@ -85,8 +84,6 @@
                         <button class="bttnfour">Buy</button>
                    </div>
         </div>
-
-
         </section>
         <section class="coffeshop"><!--ТЗ:секция№4 coffeshop.-->
             <h2>Coffee shop</h2>
@@ -98,21 +95,20 @@
                  </div>
                     <div class="menu">
                     <div class="coffe">
-                       <span><p>Cold Brew Coffee</p><div class="line2"></div><p>$3</p></span>
-                       <span> <p>French Press Pot</p><div class="line2"></div><p>$5</p></span>
-                        <span><p>Espresso</p><div class="line2"></div><p>$2</p></span>
-                        <span><p>Cappuccino</p><div class="line2"></div><p>$4</p></span>
-                        <span><p>Hot tea</p><div class="line2"></div><p>$2</p></span>
-                        <span><p>Cold tea</p><div class="line2"></div><p>$2</p></span>
+                       <div class="spancoffe"><p>Cold Brew Coffee</p><div class="line2"></div><p>$3</p></div>
+                       <div class="spancoffe"><p>French Press Pot</p><div class="line2"></div><p>$5</p></div>
+                       <div class="spancoffe"><p>Espresso</p><div class="line2"></div><p>$2</p></div>
+                       <div class="spancoffe"><p>Cappuccino</p><div class="line2"></div><p>$4</p></div>
+                       <div class="spancoffe"><p>Hot tea</p><div class="line2"></div><p>$2</p></div>
+                       <div class="spancoffe"><p>Cold tea</p><div class="line2"></div><p>$2</p></div>
                     </div>
                     <div class="deserts">
-                        
-                        <span><p>Forest Gateau</p><div class="line2"></div><p>$16</p></span>
-                        <span> <p>Blue Moon</p><div class="line2"></div><p>$16</p></span>
-                        <span><p>Truffle Cake</p><div class="line2"></div><p>$15</p></span>
-                        <span> <p>Chocolate Cake</p><div class="line2"></div><p>$18</p></span>
-                        <span> <p>Poet s Dream Cake</p><div class="line2"></div><p>$16</p></span>
-                        <span> <p>Pineapple Cake</p><div class="line2"></div><p>$14</p></span>
+                        <div class="spandeserts"><p>Forest Gateau</p><div class="line2"></div><p>$16</p></div>
+                        <div class="spandeserts"> <p>Blue Moon</p><div class="line2"></div><p>$16</p></div>
+                        <div class="spandeserts"><p>Truffle Cake</p><div class="line2"></div><p>$15</p></div>
+                        <div class="spandeserts"> <p>Chocolate Cake</p><div class="line2"></div><p>$18</p></div>
+                        <div class="spandeserts"> <p>Poet s Dream Cake</p><div class="line2"></div><p>$16</p></div>
+                        <div class="spandeserts"> <p>Pineapple Cake</p><div class="line2"></div><p>$14</p></div>
                             </div>
                     </div>
                 
@@ -132,11 +128,6 @@
             <div class="map">
                <img src="./assets/img/rectangle-4.png" alt="map"> </div>
             </div>
-
-
-
-
-
         </section>
         <section class="Digital Library Cards"> <!--ТЗ:секция№6 Digital Library Cards.-->
             <h2>Digital Library Cards</h2>
@@ -149,7 +140,7 @@
                     <p>Brooklyn Public Library</p>
                     <form>
                         <input type="text" id="name" placeholder="Reader's name" class="inputname">
-                        <input type="numbercard" id="namber" placeholder="Card number" class="inputnumber">
+                        <input type="text" id="namber" placeholder="Card number" class="inputnumber">
                     </form>
                          </div>
                     <button>Check the card</button>
@@ -171,9 +162,9 @@
                 <p>286 Cadman Plaza, New York, NY 11238, United States</p>
                 <nav>
                     <ul style="list-style: none">
-                <a href=""><img src="./assets/svg/u-twitter-alt.svg" alt="twitter"></a>
-                <a href=""><img src="./assets/svg/u-instagram.svg" alt="instagram"></a>
-                <a href=""><img src="./assets/svg/u-facebook-f.svg" alt="u-facebook-f"></a>
+                <li><a href=""><img src="./assets/svg/u-twitter-alt.svg" alt="twitter"></a></li>
+                <li><a href=""><img src="./assets/svg/u-instagram.svg" alt="instagram"></a></li>
+                <li><a href=""><img src="./assets/svg/u-facebook-f.svg" alt="u-facebook-f"></a></li>
                     </ul>
                     </nav>
             </div>
