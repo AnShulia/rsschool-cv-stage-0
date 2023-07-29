@@ -1,15 +1,8 @@
 *{                      
     border: 0;
-    margin: 0;
-    max-width: 1440px;
-    border:1px rgba(red, green, blue, alpha) dotted;
-    box-sizing: border-box;
-    
-}
-.privatstyle{ 
-    border: 1px red solid;
-    border: 1px rgba rgb(9, 0, 32) solid;
-    color:aqua;
+    margin: 0 auto;
+    max-width: 1440px; 
+    box-sizing: border-box;  
 }
 /*Правило для всей странички*/
 .line{
@@ -18,61 +11,64 @@
     flex-shrink: 0;
     background: #0C0C0E;
     margin-left: auto; margin-right: auto; 
-    margin-top: 20px; margin-bottom: 40px;
+    margin-top: 20px;
+    
 }
-h2{
+h2{ 
     color: #0C0C0E;
     font-family: Forum;
     font-size: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
+    font-weight: 400;
     text-align: center;
-    padding-top: 20px; margin-bottom: 20px;
+    line-height: 40px;
+    margin-top:20px;
     margin-left: auto; margin-right: auto; 
-
 }
-p{
-    color: #000;
-    font-size: 30px;
-    font-family: Inter;
+body{
+    min-height: 100vh;
 }
 /*HEAD*/
-.header{
+.header{  
+    box-sizing: border-box;
     background: #0C0C0E;
     color:#FFFFFF;
-    width: auto;
+    width: 1440px;
     height: 90px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;  
 }
 .header h1{ 
-    margin-top: 20px;
-    margin-left: 20px; 
-
-}
-.header ul{
-    display: inline-flex;
-    width: 584px; height: 50px;
-    margin-top: 20px;  margin-left: 254px; 
-    
-    font-size: 25px;
+    margin-top:20px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: Forum;
     line-height: 50px;
+    letter-spacing: 0.6px;
+    width: 294px; height: 50px;
+    font-weight: 400;
+    white-space:nowrap;
+}
+.header ul{ 
+    display: inline-flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top:20px; margin-left: 414px;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: Inter;
+    gap: 30px;
     white-space:nowrap;
     text-align: center;
-    font-family: Inter;
-    justify-content: space-between;
-
 }
 .header li:hover{            /*Эффект ховера по тз*/
-    border-bottom: 3px solid #571d1d;
+    border-bottom: 3px solid #ffffff;
+    cursor: pointer;
 }
 .icon-profile{
     width: 28px;
     height: 28px;
-    margin-top: 31px;
-    margin-left: 40px; 
-    margin-right: 10px;
+    margin-top:31px; margin-left: 40px;
 }
 /*End head*/
 /*Погнало тело*/
@@ -89,134 +85,117 @@ main .welkome{
     height: 600px;
     width: 1440px;    
 }
-main .about{
-    width: 1440px;    
-    width: 100%;
-    height: 837px;
+main .about {
+    width: 1440px;  height: 837px; 
+    width: 100%; height: 100%;
+}
+.about p{
+    margin-top: 40px;
+    height: 40px;  
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Inter;
+}
+.about h2{
+    height: 40px; width: 106px;
+}
+main .about__image{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px; margin-right: 20px;
+    flex-shrink: 0;
+    
+    
+
+
 }
 main .about__pagination{ 
-    margin: 40px 686px;
+    margin: 40px 686px 40px 686px;
 }
+/*favorites*/
 main .favorites{ 
-    height: auto;  width: 1440px;
-    margin:0;
+    width: 1440px; 
+    box-sizing: border-box;
+    margin-top: 57px;
 }
-main .favorites__bttn label, input{
-     font-size: 30px;
-     margin-right:10px ;
-     margin-left: 50px;
+main .favorites h2{
+    margin-top:13px;
+    width: 160px; height: 40px;
+}
+.text{
+    width: 234px; height: 24px;
+    margin-top: 40px; margin-left: 18px; margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    white-space:nowrap;
+    line-height: normal;
+    font-size: 23px;
+
+}
+main .favorites__bttn label, input{ /*Доработай*/
      display:inline-flex;
-     justify-content: space-between;
+     flex-direction: row;
+     gap: 20px;
+     font-size: 24px;
+     height: 24px; width: auto;
+     margin-left:10px; margin-right: 90px ;
+     line-height: normal;
 }
+/*Общие favorit*/
 main .favorites__item{
-    
-    height: 1150px; width: 1440px;
+   margin-top: 38px; margin-left: 19px; margin-right: 59px;
     flex-shrink: 0;
     box-sizing: border-box;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
     text-align: left;
-    gap: 20px;
-}
-
-main .bookone{border: 1px solid #000;
-   width: 550px;
-   height: 555px;
-   margin-left: 10px;
-   display:block;
-   
-}
-main .bookone img{
-    display: block;
-    position:absolute;
-    left: 395px ; top: 1948px;
-}
-main .bttnone{
-    display: block;
-    position:absolute;
-    left:50px ; top: 2195px;
-}
-main .twobook{border: 1px solid #000;
-    width: 550px; height: 555px;
-    margin-left: 10px;
-    flex-shrink: 0;
-}
-main .twobook img{
-    display: block;
-    position:absolute;
-    left: 395px ; top: 2523px;
-}
-main .bttntwo{
-    display: block;
-    position:absolute;
-    left:50px ; top: 2810px;
-}
-main .threebook{border: 1px solid #000;
-    width: 550px; height: 555px;
-    margin-right: 10px;
-}
-main .threebook img{
-
-    display: block;
-    position:absolute;
-    left: 1235px ; top: 1948px;
-
-}
-main .bttnthree{
-    display: block;
-    position:absolute;
-    left:910px ; top: 2195px;
-
-
-}
-main .fourhbook{border: 1px solid #000;
-    width: 550px; height: 555px;
-}
-main .fourhbook img{
-    display: block;
-    position:absolute;
-    left: 1235px; top: 2523px;
-
-}
-main .bttnfour {
-    display: block;
-    position:absolute;
-    left:910px ; top: 2770px;
-}
-/*Общие favorit*/
-main .favorites__item h3{
-    font-family: Inter;
-    text-align: left;
-    font-size: 29px;
-    line-height: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-left: 30px;
-}
-main .favorites__item h4{
-    font-family: Inter;
-    text-align: left;
-    font-size: 25px;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    padding-left: 30px;
 }
 main .favorites__item span{
     display:block;
-    font-size: 30px;
+    width: 102px;    
+    margin-top: 13px; margin-left: 19px;
+    font-size: 20px;
+    font-family: Forum;
+    line-height: 40px;
+    letter-spacing:2px ;
+    text-transform: capitalize;
+    white-space: nowrap;
+    border-bottom: 1px #BB945F solid ;
+}
+.zagolovok{
+    margin-left:19px; margin-top: 20px;
+    height: 80px; 
+    font-family: Inter;
+    font-weight: 700;
     line-height: 40px;
     letter-spacing: 2px;
-    padding-left: 30px;padding-top: 20px; padding-bottom: 10px;
 }
-main .favorites__item p{
-    display:inline-block;
-    width: 355px; height: auto; max-height: 320px;
-    font-size: 25px;
-    padding: 10px 10px 0px 30px;
+.zagolovok h3{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.zagolovok h4{
+    font-weight: 700;
+    font-size: 15px;
     text-transform: capitalize;
+}
+main .textblock p{
+    margin-top:17px; margin-left: 17px;
+    width: 355px; height: 320px;
+    font-size: 15px;
+    display:inline-block;
+    text-align: left;
+    font-family: Inter;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
 }
 main .favorites__item button{
     width: 75px;  height: 30px;
@@ -225,22 +204,102 @@ main .favorites__item button{
     font-family: Inter;
     font-weight: 700;
     letter-spacing: 1px;
+    background-color: #FFF;
     border: 1px solid #0C0C0E;
     border-radius: 2px;
     padding: 1px 1px 1px 1px;
 }
-/*coffe shop*/
-.descript { 
-padding:40px 0 40px 0; 
-margin: 0 20px 0 20px;
-text-align: left;
+/*Блок с книжками*/
+/*1*/
+main .bookone{border: 1px solid #000;
+   width: 550px; height: 555px; flex-shrink: 0;
+   margin-bottom:40px;
+   display: block;
 }
+main .bookone img{
+    display: block;
+    margin-left: 369px; margin-top: 100px;
+}
+main .bttnone{
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px;   
+}
+/*2*/
+main .twobook{border: 1px solid #000;
+    display: block;
+    width: 550px; height: 555px; flex-shrink: 0;
+    
+}
+main .twobook img{
+   display: block;
+    margin-left: 369px; margin-top: 100px; 
+    
+}
+main .bttntwo{
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+/*3*/
+main .threebook{border: 1px solid #000;
+    width: 550px; height: 555px; flex-shrink: 0;
+    display: block;
+}
+main .threebook img{
+    display: block;
+    margin-left: 369px; margin-top: 100px; 
+}
+main .bttnthree{
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+/*4*/
+main .fourhbook{border: 1px solid #000;
+    width: 550px; height: 555px; flex-shrink: 0;
+    display: block;
+}
+main .fourhbook img{
+    display: block;
+    margin-left: 369px; margin-top: 100px; 
+}
+main .bttnfour { border: 1px solid #BB945F;
+    color: #BB945F;
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px; 
+    
+}
+/*coffe shop*/
+.coffeshop h2{
+    display: block;
+    margin-top:60px; 
+}
+.coffeshop span{
+    display: block;
+    height: 120px;
+    font-size: 20px;
+    margin: 40px 20px 0 20px;
+    line-height: 40px; 
+    font-family: Inter;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
 .coffedeserts {
     display: flex;
+    height: 40px;
     justify-content: space-between;
-    margin: 0 20px 0 20px;
+    margin: 33px 20px 0 20px;
     color: #BB945F;
-    font-size: 40px;
+    font-size: 33px;
+    line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
 }
@@ -248,87 +307,88 @@ text-align: left;
     display: flex;
     width: 100%;
     font-family: Inter;
-    font-size: 20px;
     letter-spacing: 2px;
+    line-height: 40px;
     text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: space-between;
+    
 }
 .coffe{
    width: 50%; 
+   display: inline-flex;
+   flex-direction: column;
+   white-space:nowrap;
+   align-items: flex-start;
+   font-size: 20px;
 }
 .deserts{
     width: 50%; 
+    font-size: 20px;
 }
 .spancoffe{
     display: inline-flex;
-    width: 100%; height: 50px;
-    gap:60px;
-    padding-top:10px;
-    font-size: 25px;
-    line-height: 50px;
+    width: 100%; height: 40px; width: 455px ;
+    flex-direction: row;
     white-space:nowrap;
-    text-align: center;
-    font-family: Inter;
-    justify-content: space-around;
-    margin-top: 20px; margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 40px; margin-left:20px;
+    gap: 60px;    
 }
 .spandeserts{
     display: inline-flex;
-    width: 100%; height: 50px;
-    gap:60px;
-    padding-top:10px;
-    font-size: 25px;
-    line-height: 50px;
+    width: 100%; height: 40px;
+    gap: 60px;
+    margin-top: 40px;  margin-right:20px;
     white-space:nowrap;
     font-family: Inter;
-    justify-content:flex-end ;
-    margin-top: 20px; margin-bottom: 20px;
+    justify-content: end;
     align-items: flex-end;
+    text-align: right;
 }
-.coffe p{
-    display: block;
-    width: 196px;
-}
-.deserts p{
-    display: flex;
-    
-    align-items: flex-end;
-    text-align: end;
-}
-.line2{
+.line2{ /*следует доработать, с левой сторона хромает*/
     width: 100px;
     height: 1px;
     background: #BB945F;
     margin-top: 20px; margin-bottom: 20px;
-    gap:60px;
-    
+    text-align: center; 
 }
 /*КОНТАТЫ*/
-.OurContacts {
-   margin:20px 20px 40px 20px;
+.OurContacts h2{
+   width: 240px; height: 40px;
+   white-space: nowrap;
+   margin-top: 60px;
+
 }
 .contactmap{
-    display:flex;
-    padding:20px 10px 40px 0;
+    display: flex;
+   margin: 40px 20px 0 20px;
 }
-.Contacts{
-    width: 50%; height: 414px;
-    text-transform: capitalize; letter-spacing: 2px;
+.contacts{
+    display: block;
     font-family: Inter;
+    width: 50%; 
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;   
 }
-.Contacts p{
-    margin-bottom: 20px;
-   } 
+.contacts p{
+    height: 40px;
+   margin-bottom: 20px;
+}
 .map{
-    width: 50%;
+    width: 50%; 
 }
 /*END CONTACTS*/
 /*Digital Library Cards*/
-.digital{
-    width: 50%;
-    display:flex;
-    height: 614px;
-    width: 1440px;
+.DigitalLibraryCards h2{
+    margin-top: 60px;
 }
+.digital{
+    width: 100%;
+    display:flex;}
 /*левая сорона*/
 .digitalleft{
     width: 50%;
@@ -336,9 +396,15 @@ text-align: left;
     text-align: start;
 }
 .digitalleft h3{
+    margin-top: 38px;  margin-left: 158px;
+    width: 324px; height: 36px;
     font-size: 30px;
     text-align: center;
     margin-bottom: 30px;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    font-family: Inter;
+    white-space: nowrap;
 }
 .digitalborder {
     border: 3px solid #BB945F;
@@ -370,7 +436,7 @@ text-align: left;
     font-size: 30px;
     white-space:nowrap;
 }
-.digitalbackgroung input{ /*Колхоз, но как получилос, если кто подкинет идей как правильно, будет кул*/
+.digitalbackgroung input{ /*Доработай*/
     width: 520px;
     height: 66px;
     flex-shrink: 0;
@@ -379,6 +445,7 @@ text-align: left;
     flex-direction: column;
     margin-top: 30px; margin-bottom: -20px;
     margin-left: -555px;    
+
 }
 .digitalborder button{
     border-radius: 2px;
@@ -388,96 +455,110 @@ text-align: left;
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
-    width: 300px; height: 44px;
-    margin-left: 150px; 
-    margin-bottom: 20px;  
+    width: 242px; height: 44px;
+    margin-left: 176px; 
+    margin-bottom: 30px;  
+    background: #FFF;
 }
 /*Правая сорона*/
-.get{
+.digitalright{
     width: 50%;
     text-align: right;
     font-size: 20px;
-    height: 614px;
+   
 }
-.get h4{
-    margin-top: 10px;
+.digitalright h4{
+    
+    margin-top: 38px; margin-right: 20px;
     font-size: 30px;
     letter-spacing: 0.6px;
     font-family: Forum;
     margin-bottom:35px ;
 }
-.get p{
+.digitalright p{
+    margin-right: 20px;
     font-family: Inter;
     width: 456px;
     letter-spacing: 0.4px;
     line-height: 40px;
     text-align: right;
-    float: right;
 }
-.get button{
-    width: 80px; height: 40px;
+.digitalright button{
+    font-family: Inter;
+    width: 75px; height: 30px;
     border-radius: 2px;
     border: 1px solid #0C0C0E;
     border-radius: 2px;
     letter-spacing: 1px;
+    font-size: 10px;
+    background: #FFF;
+}
+.digitalrightbttm{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: end;
+
 }
 .bttnsign{
-   position: relative;
-   left: 530px;
-   top: 170px;
+    margin-top: 30px;
+    margin-right: 113px;  
 }
 .bttnlog{
-    position: relative;
-   left: 350px;
-   top: 170px;
+    margin-top: -30px;
+    margin-right: 17px; 
 }
 /*Конец мэйна*/
 /*Идем в подвал*/
-.footer p{ /*Отчего-то нужно писать отдельным(мол, в хедере работал колор для всей секции, а здесь нет*/
-    color: #FFF;    
-}
 .footer{
+    width: 1440px;
+    margin-top: 40px;
     background: #0C0C0E;
-    height: 250px;
-    display:flex;
-    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 17px;
 }
 .footertop{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
+    font-size: 15px; 
 }
 .topleft{
     width: 50%;
 }
-.topleft p{
-    font-size: 20px;
-    width: 229px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.topleft ul{
+.topleft  ul{
     display: inline-flex;
     gap:15px;
-    margin-top: 18px; margin-left: -20px;;
+    height: 24px;
+    margin-top: 18px; margin-left: -20px;
 }
-.topright{ 
+.topleft p{
+    width: 229px; height: 40px;
+    margin-top:15px; margin-left:15px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.topright{
     width: 50%;
+    gap: 10px;
 }
 .topright p{
-    margin-right: 20px;
-    font-size: 20px;
+    display: block;
+    width: 149px; height: 40px;
     font-family: Inter;
-    width: 456px;
     letter-spacing: 0.4px;
-    line-height: 40px;
+    line-height: 20px;
     text-align: right;
-    float: right;
+   margin-left: 549px;
+    margin-top: 20px;
+    white-space: nowrap;
 }
 .line3{
     width: 1400px;
     height: 1px;
     background: #FFF;
-    margin-top: 20px;
+    margin-top: 20px; margin-left: 20px; margin-right: 20px;
     flex-shrink: 0;  
 }
 .bottom{
@@ -485,9 +566,19 @@ text-align: left;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 44px 20px;  
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-left: 20px; margin-right: 20px;
 }
 /*Happy end, наверное..*/
+
+@media (max-width: 900px) {
+    .body{
+      width: 100%;
+      
+    }
+  }
 
 
 
