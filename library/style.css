@@ -1,0 +1,598 @@
+*{                      
+    border: 0;
+    margin: 0 auto;
+    max-width: 1440px; 
+    box-sizing: border-box;  
+}
+/*Правило для всей странички*/
+.line{
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #0C0C0E;
+    margin-left: auto; margin-right: auto; 
+    margin-top: 20px;
+    
+}
+h2{ 
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    margin-top:20px;
+    margin-left: auto; margin-right: auto; 
+}
+body{
+    min-height: 100vh;
+}
+/*HEAD*/
+.header{  
+    box-sizing: border-box;
+    background: #0C0C0E;
+    color:#FFFFFF;
+    width: 1440px;
+    height: 90px;
+    display: flex;
+}
+.header h1{ 
+    margin-top:20px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: Forum;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    width: 294px; height: 50px;
+    font-weight: 400;
+    white-space:nowrap;
+}
+.header ul{ 
+    display: inline-flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top:20px; margin-left: 414px;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: Inter;
+    gap: 30px;
+    white-space:nowrap;
+    text-align: center;
+}
+.header li:hover{            /*Эффект ховера по тз*/
+    border-bottom: 3px solid #ffffff;
+    cursor: pointer;
+}
+.icon-profile{
+    width: 28px;
+    height: 28px;
+    margin-top:31px; margin-left: 40px;
+}
+/*End head*/
+/*Погнало тело*/
+main{
+    background: #FFF;
+    width: 100%;
+    width: 1440px;
+    margin:0;
+}
+main .welkome{ 
+    background-image: url('./assets/img/welcome.png');
+    background-color: #c7b39b;
+    height: 600px;
+    width: 1440px;    
+}
+main .about {
+    width: 1440px;  height: 837px; 
+    width: 100%; height: 100%;
+}
+.about p{
+    margin-top: 40px;
+    height: 40px;  
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Inter;
+}
+.about h2{
+    height: 40px; width: 106px;
+}
+main .about__image{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px; margin-right: 20px;
+    flex-shrink: 0;
+    
+    
+
+
+}
+main .about__pagination{ 
+    margin: 40px 686px 40px 686px;
+}
+/*favorites*/
+main .favorites{ 
+    width: 1440px; 
+    box-sizing: border-box;
+    margin-top: 57px;
+}
+main .favorites h2{
+    margin-top:13px;
+    width: 160px; height: 40px;
+}
+.text{
+    width: 234px; height: 24px;
+    margin-top: 40px; margin-left: 18px; margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    white-space:nowrap;
+    line-height: normal;
+    font-size: 23px;
+
+}
+main .favorites__bttn label, input{ /*Доработай*/
+     display:inline-flex;
+     flex-direction: row;
+     gap: 20px;
+     font-size: 24px;
+     height: 24px; width: auto;
+     margin-left:10px; margin-right: 90px ;
+     line-height: normal;
+}
+/*Общие favorit*/
+main .favorites__item{
+   margin-top: 38px; margin-left: 19px; margin-right: 59px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+main .favorites__item span{
+    display:block;
+    width: 102px;    
+    margin-top: 13px; margin-left: 19px;
+    font-size: 20px;
+    font-family: Forum;
+    line-height: 40px;
+    letter-spacing:2px ;
+    text-transform: capitalize;
+    white-space: nowrap;
+    border-bottom: 1px #BB945F solid ;
+}
+.zagolovok{
+    margin-left:19px; margin-top: 20px;
+    height: 80px; 
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+.zagolovok h3{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.zagolovok h4{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+main .textblock p{
+    margin-top:17px; margin-left: 17px;
+    width: 355px; height: 320px;
+    font-size: 15px;
+    display:inline-block;
+    text-align: left;
+    font-family: Inter;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+}
+main .favorites__item button{
+    width: 75px;  height: 30px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #FFF;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    padding: 1px 1px 1px 1px;
+}
+/*Блок с книжками*/
+/*1*/
+main .bookone{border: 1px solid #000;
+   width: 550px; height: 555px; flex-shrink: 0;
+   margin-bottom:40px;
+   display: block;
+}
+main .bookone img{
+    display: block;
+    margin-left: 369px; margin-top: 100px;
+}
+main .bttnone{
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px;   
+}
+/*2*/
+main .twobook{border: 1px solid #000;
+    display: block;
+    width: 550px; height: 555px; flex-shrink: 0;
+    
+}
+main .twobook img{
+   display: block;
+    margin-left: 369px; margin-top: 100px; 
+    
+}
+main .bttntwo{
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+/*3*/
+main .threebook{border: 1px solid #000;
+    width: 550px; height: 555px; flex-shrink: 0;
+    display: block;
+}
+main .threebook img{
+    display: block;
+    margin-left: 369px; margin-top: 100px; 
+}
+main .bttnthree{
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+/*4*/
+main .fourhbook{border: 1px solid #000;
+    width: 550px; height: 555px; flex-shrink: 0;
+    display: block;
+}
+main .fourhbook img{
+    display: block;
+    margin-left: 369px; margin-top: 100px; 
+}
+main .bttnfour { border: 1px solid #BB945F;
+    color: #BB945F;
+    display: block;
+    margin-left: 17px; margin-top: 17px;
+    font-size: 10px;
+    letter-spacing: 1px; 
+    
+}
+/*coffe shop*/
+.coffeshop h2{
+    display: block;
+    margin-top:60px; 
+}
+.coffeshop span{
+    display: block;
+    height: 120px;
+    font-size: 20px;
+    margin: 40px 20px 0 20px;
+    line-height: 40px; 
+    font-family: Inter;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.coffedeserts {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin: 33px 20px 0 20px;
+    color: #BB945F;
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    font-family: Inter;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.coffe{
+   width: 50%; 
+   display: inline-flex;
+   flex-direction: column;
+   white-space:nowrap;
+   align-items: flex-start;
+   font-size: 20px;
+}
+.deserts{
+    width: 50%; 
+    font-size: 20px;
+}
+.spancoffe{
+    display: inline-flex;
+    width: 100%; height: 40px; width: 455px ;
+    flex-direction: row;
+    white-space:nowrap;
+    justify-content: space-between;
+    margin-top: 40px; margin-left:20px;
+    gap: 60px;    
+}
+.spandeserts{
+    display: inline-flex;
+    width: 100%; height: 40px;
+    gap: 60px;
+    margin-top: 40px;  margin-right:20px;
+    white-space:nowrap;
+    font-family: Inter;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
+}
+.line2{ /*следует доработать, с левой сторона хромает*/
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin-top: 20px; margin-bottom: 20px;
+    text-align: center; 
+}
+/*КОНТАТЫ*/
+.OurContacts h2{
+   width: 240px; height: 40px;
+   white-space: nowrap;
+   margin-top: 60px;
+
+}
+.contactmap{
+    display: flex;
+   margin: 40px 20px 0 20px;
+}
+.contacts{
+    display: block;
+    font-family: Inter;
+    width: 50%; 
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;   
+}
+.contacts p{
+    height: 40px;
+   margin-bottom: 20px;
+}
+.map{
+    width: 50%; 
+}
+/*END CONTACTS*/
+/*Digital Library Cards*/
+.DigitalLibraryCards h2{
+    margin-top: 60px;
+}
+.digital{
+    width: 100%;
+    display:flex;}
+/*левая сорона*/
+.digitalleft{
+    width: 50%;
+    justify-content: center; 
+    text-align: start;
+}
+.digitalleft h3{
+    margin-top: 38px;  margin-left: 158px;
+    width: 324px; height: 36px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    font-family: Inter;
+    white-space: nowrap;
+}
+.digitalborder {
+    border: 3px solid #BB945F;
+    width: 600px;
+    height: 386px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;  
+    box-sizing: border-box;
+}
+.digitalbackgroung{
+    background: #BB945F;
+    width: 560px;
+    height: 272px;
+    flex-shrink: 0;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+ 
+}
+.digitalbackgroung p{
+    font-family: Forum;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    padding: 20px 246px 202px 20px;
+    font-size: 30px;
+    white-space:nowrap;
+}
+.digitalbackgroung input{ /*Доработай*/
+    width: 520px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; margin-bottom: -20px;
+    margin-left: -555px;    
+
+}
+.digitalborder button{
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    color: #0C0C0E;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 242px; height: 44px;
+    margin-left: 176px; 
+    margin-bottom: 30px;  
+    background: #FFF;
+}
+/*Правая сорона*/
+.digitalright{
+    width: 50%;
+    text-align: right;
+    font-size: 20px;
+   
+}
+.digitalright h4{
+    
+    margin-top: 38px; margin-right: 20px;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    font-family: Forum;
+    margin-bottom:35px ;
+}
+.digitalright p{
+    margin-right: 20px;
+    font-family: Inter;
+    width: 456px;
+    letter-spacing: 0.4px;
+    line-height: 40px;
+    text-align: right;
+}
+.digitalright button{
+    font-family: Inter;
+    width: 75px; height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-size: 10px;
+    background: #FFF;
+}
+.digitalrightbttm{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: end;
+
+}
+.bttnsign{
+    margin-top: 30px;
+    margin-right: 113px;  
+}
+.bttnlog{
+    margin-top: -30px;
+    margin-right: 17px; 
+}
+/*Конец мэйна*/
+/*Идем в подвал*/
+.footer{
+    width: 1440px;
+    margin-top: 40px;
+    background: #0C0C0E;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+.footertop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 15px; 
+}
+.topleft{
+    width: 50%;
+}
+.topleft  ul{
+    display: inline-flex;
+    gap:15px;
+    height: 24px;
+    margin-top: 18px; margin-left: -20px;
+}
+.topleft p{
+    width: 229px; height: 40px;
+    margin-top:15px; margin-left:15px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.topright{
+    width: 50%;
+    gap: 10px;
+}
+.topright p{
+    display: block;
+    width: 149px; height: 40px;
+    font-family: Inter;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    text-align: right;
+   margin-left: 549px;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+.line3{
+    width: 1400px;
+    height: 1px;
+    background: #FFF;
+    margin-top: 20px; margin-left: 20px; margin-right: 20px;
+    flex-shrink: 0;  
+}
+.bottom{
+    height: 110px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-left: 20px; margin-right: 20px;
+}
+/*Happy end, наверное..*/
+
+@media (max-width: 900px) {
+    .body{
+      width: 100%;
+      
+    }
+  }
+
+
+
+
+    
+
+
+  
+
+
+
+
+
+ 
+
+
+    
+/*library/assets/img/welcome.png*/
