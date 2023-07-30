@@ -81,7 +81,6 @@ main{
 main .welkome{ 
     background-image: url('./assets/img/welcome.png');
     background-color: #c7b39b;
-    background-size: no-repeat;
     height: 600px;
     width: 1440px;    
 }
