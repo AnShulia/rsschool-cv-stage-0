@@ -1,10 +1,22 @@
 *{                      
     border: 0;
-    margin: 0 auto;
-    max-width: 1440px; 
+    margin: 0;
     box-sizing: border-box;  
 }
 /*Правило для всей странички*/
+html{
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    width: 1440px; width: 100%; max-width: 1440px;
+    
+   
+}
+@media screen and (max-width: 768px){
+    html{
+        width: 768px; width: 100%; max-width: 768px;
+        overflow-x: hidden;
+    }
+}
 .line{
     width: 50px;
     height: 1px;
@@ -26,8 +38,13 @@ h2{
     margin-top:20px;
     margin-left: auto; margin-right: auto; 
 }
-body{
-    min-height: 100vh;
+a{
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
 }
 /*HEAD*/
 .header{  
@@ -60,15 +77,34 @@ body{
     gap: 30px;
     white-space:nowrap;
     text-align: center;
+    
 }
-.header li:hover{            /*Эффект ховера по тз*/
-    border-bottom: 3px solid #ffffff;
-    cursor: pointer;
+.header li:hover{          
+    border-bottom: 3px solid #ffffff;   
 }
 .icon-profile{
     width: 28px;
     height: 28px;
     margin-top:31px; margin-left: 40px;
+}
+header .menu{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .header{
+        width: 768px;
+    }
+    .header ul{ 
+        display: none;
+    }
+    .icon-profile{
+        margin-left:321px;
+    }
+    header .menu{
+        display: block;  
+        margin-top: 28px; margin-left: 40px;
+        width: 45px;
+    }
 }
 /*End head*/
 /*Погнало тело*/
@@ -78,6 +114,11 @@ main{
     width: 1440px;
     margin:0;
 }
+@media screen and (max-width: 768px){
+    main{
+        width: 768px;
+    }
+    }
 main .welkome{ 
     background-image: url('./assets/img/welcome.png');
     background-color: #c7b39b;
@@ -105,13 +146,74 @@ main .about__image{
     justify-content: space-between;
     margin-left: 20px; margin-right: 20px;
     flex-shrink: 0;
-    
-    
-
-
+}
+.arrow{
+    display: none;
 }
 main .about__pagination{ 
+    text-align:center;
     margin: 40px 686px 40px 686px;
+    white-space: nowrap;
+}
+.dot{
+    cursor: pointer;
+    height: 16px; width: 16px;
+    margin: 0 2px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot:hover {
+    background-color: #BB945F;
+  }
+@media screen and (max-width: 768px){
+    main .welkome{
+        width: 768px; height: 600px; 
+        background-image: url('./assets/img/welcomeTablet.png');
+    }
+    main .about{
+        width: 768px; 
+        display:flex;
+        flex-direction: column;
+        align-content: center;  
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+    main .about p{
+        display: block;
+        width: 728px;height: 80px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    main .about__image{
+        width: 614px;
+        margin-top:20px;
+        justify-content: space-between;
+    }
+    .arrow{
+       display:block;
+       width: 24px;
+       height: 24px;
+       border-radius: 3px 0 0 3px;
+       margin-top: 288.5px;
+    }
+    .imagenone{
+        display:none;
+    }  
+    main .about__pagination{
+        margin-top:25px;  
+        width: auto;
+        margin: 25px 0 0 0;
+    }
+    .dotnone{
+        cursor: pointer;
+        height: 16px; width: 16px;
+        margin: 0 2px;
+        background-color: #0C0C0E;
+        border-radius: 50%;
+        display: inline-block;
+    }
 }
 /*favorites*/
 main .favorites{ 
@@ -125,25 +227,35 @@ main .favorites h2{
 }
 .text{
     width: 234px; height: 24px;
-    margin-top: 40px; margin-left: 18px; margin-bottom: 40px;
+    margin-top: 40px; margin-left: 18px; margin-bottom: 41px;
     text-align: center;
     font-weight: 700;
     white-space:nowrap;
     line-height: normal;
     font-size: 23px;
 
+
 }
-main .favorites__bttn label, input{ /*Доработай*/
+.favorites__bttn { /*Доработай*/
      display:inline-flex;
      flex-direction: row;
-     gap: 20px;
-     font-size: 24px;
-     height: 24px; width: auto;
-     margin-left:10px; margin-right: 90px ;
-     line-height: normal;
+}
+.favorites__bttn input{ 
+    width: 17px; height: 17px;
+    margin-left:20px;
+    stroke-width: 2px;
+    stroke: #000;
+    }
+.favorites__bttn label{
+ margin-right: 60px;
+ font-family: Inter;
+ font-size: 20px;
+ line-height: normal;
+ margin-left:20px;
+ line-height: normal;
 }
 /*Общие favorit*/
-main .favorites__item{
+ .favorites__item{
    margin-top: 38px; margin-left: 19px; margin-right: 59px;
     flex-shrink: 0;
     box-sizing: border-box;
@@ -154,7 +266,7 @@ main .favorites__item{
     flex-wrap: wrap;
     text-align: left;
 }
-main .favorites__item span{
+.favorites__item span{
     display:block;
     width: 102px;    
     margin-top: 13px; margin-left: 19px;
@@ -166,26 +278,23 @@ main .favorites__item span{
     white-space: nowrap;
     border-bottom: 1px #BB945F solid ;
 }
-.zagolovok{
-    margin-left:19px; margin-top: 20px;
-    height: 80px; 
-    font-family: Inter;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 2px;
-}
-.zagolovok h3{
+.favorites__item h3{
+    color: #000;
+    margin-top:20px; margin-left:20px;
     font-weight: 700;
     font-size: 15px;
     text-transform: uppercase;
+
 }
-.zagolovok h4{
+.favorites__item h4{
+    color: #000;
+    margin-top:10px; margin-left:20px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: capitalize;
 }
-main .textblock p{
-    margin-top:17px; margin-left: 17px;
+ .favorites__item p{
+    margin-top:30px; margin-left: 17px;
     width: 355px; height: 320px;
     font-size: 15px;
     display:inline-block;
@@ -195,8 +304,9 @@ main .textblock p{
     letter-spacing: 2px;
     text-transform: capitalize;
     white-space: pre-wrap;
+    
 }
-main .favorites__item button{
+.favorites__item button{
     width: 75px;  height: 30px;
     flex-shrink: 0;
     text-align: center;
@@ -207,77 +317,61 @@ main .favorites__item button{
     border: 1px solid #0C0C0E;
     border-radius: 2px;
     padding: 1px 1px 1px 1px;
+    display: block;
+    margin-left: 20px; 
+    font-size: 10px;
+    letter-spacing: 1px;  
+}
+.favorites__item button:hover{
+    background-color: #BB945F;
+}
+.favorites__item img{
+    display: block;
+    margin-left: 390px; margin-top: -270px;
+}
+@media screen and (max-width: 768px){
+main .favorites{
+   margin-top: 0px;
+   width: 768px;
+   display: flex;
+   flex-direction: column;
+}
+main .favorites__item{
+    display:flex;
+    justify-content: center;
+    
+}
 }
 /*Блок с книжками*/
 /*1*/
 main .bookone{border: 1px solid #000;
    width: 550px; height: 555px; flex-shrink: 0;
    margin-bottom:40px;
-   display: block;
-}
-main .bookone img{
-    display: block;
-    margin-left: 369px; margin-top: 100px;
-}
-main .bttnone{
-    display: block;
-    margin-left: 17px; margin-top: 17px;
-    font-size: 10px;
-    letter-spacing: 1px;   
+   display: flex;
+   flex-direction: column;
 }
 /*2*/
 main .twobook{border: 1px solid #000;
     display: block;
-    width: 550px; height: 555px; flex-shrink: 0;
-    
-}
-main .twobook img{
-   display: block;
-    margin-left: 369px; margin-top: 100px; 
-    
-}
-main .bttntwo{
-    display: block;
-    margin-left: 17px; margin-top: 17px;
-    font-size: 10px;
-    letter-spacing: 1px;
+    width: 550px; height: 555px; flex-shrink: 0; 
+    margin-bottom:40px;
 }
 /*3*/
 main .threebook{border: 1px solid #000;
     width: 550px; height: 555px; flex-shrink: 0;
     display: block;
-}
-main .threebook img{
-    display: block;
-    margin-left: 369px; margin-top: 100px; 
-}
-main .bttnthree{
-    display: block;
-    margin-left: 17px; margin-top: 17px;
-    font-size: 10px;
-    letter-spacing: 1px;
+    margin-bottom:40px;
 }
 /*4*/
 main .fourhbook{border: 1px solid #000;
     width: 550px; height: 555px; flex-shrink: 0;
     display: block;
-}
-main .fourhbook img{
-    display: block;
-    margin-left: 369px; margin-top: 100px; 
-}
-main .bttnfour { border: 1px solid #BB945F;
-    color: #BB945F;
-    display: block;
-    margin-left: 17px; margin-top: 17px;
-    font-size: 10px;
-    letter-spacing: 1px; 
-    
+    margin-bottom:40px;
 }
 /*coffe shop*/
 .coffeshop h2{
     display: block;
-    margin-top:60px; 
+    margin-top:20px; 
 }
 .coffeshop span{
     display: block;
@@ -290,8 +384,7 @@ main .bttnfour { border: 1px solid #BB945F;
     text-align: center;
     text-transform: capitalize;
 }
-
-.coffedeserts {
+h3{
     display: flex;
     height: 40px;
     justify-content: space-between;
@@ -311,8 +404,7 @@ main .bttnfour { border: 1px solid #BB945F;
     text-transform: capitalize;
     letter-spacing: 2px;
     text-align: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 .coffe{
    width: 50%; 
@@ -324,8 +416,10 @@ main .bttnfour { border: 1px solid #BB945F;
 }
 .deserts{
     width: 50%; 
-    font-size: 20px;
+    font-size: 20px; 
 }
+.deserts h3{
+    float: right;}
 .spancoffe{
     display: inline-flex;
     width: 100%; height: 40px; width: 455px ;
@@ -353,12 +447,53 @@ main .bttnfour { border: 1px solid #BB945F;
     margin-top: 20px; margin-bottom: 20px;
     text-align: center; 
 }
+@media screen and (max-width: 768px){
+    .coffeshop{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 768px; 
+    margin-top:10px;
+    }
+    .coffeshop h2{
+        margin-top:10px;
+    }
+    .coffeshop span{
+        height: 200px;
+        margin-bottom:20px;
+    }
+    .menu{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .coffe{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .deserts h3{
+        float: right;
+    }
+    .deserts{
+        width: 100%; 
+        float: right;
+        padding-right: 50px;
+    }   
+ }
+
 /*КОНТАТЫ*/
+.OurContacts a{
+    color:#000;
+}
 .OurContacts h2{
    width: 240px; height: 40px;
    white-space: nowrap;
    margin-top: 60px;
-
 }
 .contactmap{
     display: flex;
@@ -380,6 +515,24 @@ main .bttnfour { border: 1px solid #BB945F;
 .map{
     width: 50%; 
 }
+@media screen and (max-width: 768px){
+    .OurContacts h2{
+        margin-top: 68px;
+    }
+   .OurContacts{
+        width: 728px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    .contactmap{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
 /*END CONTACTS*/
 /*Digital Library Cards*/
 .DigitalLibraryCards h2{
@@ -404,6 +557,7 @@ main .bttnfour { border: 1px solid #BB945F;
     line-height: normal;
     font-family: Inter;
     white-space: nowrap;
+    color: #000;
 }
 .digitalborder {
     border: 3px solid #BB945F;
@@ -411,11 +565,8 @@ main .bttnfour { border: 1px solid #BB945F;
     height: 386px;
     flex-shrink: 0;
     margin-left: 20px;
-    display: flex;
+    display: flex;  
     flex-direction: column;
-    align-content: center;
-    justify-content: space-between;  
-    box-sizing: border-box;
 }
 .digitalbackgroung{
     background: #BB945F;
@@ -424,27 +575,36 @@ main .bttnfour { border: 1px solid #BB945F;
     flex-shrink: 0;
     margin: 20px 20px 0 20px;
     display: flex;
-    align-items: center;
- 
+    flex-direction: column; 
+    padding:20px 20px 20px 15px;
 }
 .digitalbackgroung p{
     font-family: Forum;
     line-height: 50px;
     letter-spacing: 0.6px;
-    padding: 20px 246px 202px 20px;
     font-size: 30px;
-    white-space:nowrap;
+    white-space: nowrap;
+    display:block;
+    width: 294px; height: 50px;  
 }
-.digitalbackgroung input{ /*Доработай*/
-    width: 520px;
-    height: 66px;
+.digitalbackgroung form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 14px; 
+    height: 163px; width: 100%;
+}
+.digitalbackgroung input{ 
+    background-color: #FFF; font-size: 30px;
+    width: 520px; height: 66px;
+    line-height: 50px;
+    letter-spacing: 0.6px;
     flex-shrink: 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin-top: 30px; margin-bottom: -20px;
-    margin-left: -555px;    
-
+    margin-bottom: 25px;
+    
 }
 .digitalborder button{
     border-radius: 2px;
@@ -456,8 +616,11 @@ main .bttnfour { border: 1px solid #BB945F;
     letter-spacing: 1px;
     width: 242px; height: 44px;
     margin-left: 176px; 
-    margin-bottom: 30px;  
+    margin-top: 20px;
     background: #FFF;
+}
+.DigitalLibraryCards button:hover{
+    background-color: #BB945F;
 }
 /*Правая сорона*/
 .digitalright{
@@ -507,6 +670,57 @@ align-items: end;
     margin-top: -30px;
     margin-right: 17px; 
 }
+@media screen and (max-width: 768px){
+    /*Верх*/
+.DigitalLibraryCards{ 
+    display:flex;
+    width: 768px;
+    flex-direction: column;
+    justify-content: center;   
+}
+.DigitalLibraryCards h2{
+    margin-top: 35px;
+}
+.digital{
+    flex-direction: column;
+    align-items: center;
+
+}
+.digitalleft{
+    width: 100%;
+}
+.digitalleft h3{
+    margin-left: 222px;
+}
+.digitalborder{
+    margin-left: 84px;
+}
+/*Низ*/
+.digitalright{
+    width: 100%;
+    text-align: center;
+}
+.digitalrightbttm{
+    display:flex;
+    align-items: center;
+}
+.digitalright h4{
+    margin-top: 20px;
+}
+.digitalrightbttm p{
+    width: 600px;
+    text-align: center;
+    margin-top: 5px;
+}
+.bttnsign{
+    margin-top: 40px;
+    margin-right: 95px;
+}
+.bttnlog{ 
+    margin-right: -95px;
+}
+
+}
 /*Конец мэйна*/
 /*Идем в подвал*/
 .footer{
@@ -532,7 +746,7 @@ align-items: end;
     height: 24px;
     margin-top: 18px; margin-left: -20px;
 }
-.topleft p{
+.topleft p{ 
     width: 229px; height: 40px;
     margin-top:15px; margin-left:15px;
     line-height: 20px;
@@ -549,9 +763,10 @@ align-items: end;
     letter-spacing: 0.4px;
     line-height: 20px;
     text-align: right;
-   margin-left: 549px;
-    margin-top: 20px;
+    margin-left: 549px;
+    margin-top: 15px;
     white-space: nowrap;
+    color:#FFF;
 }
 .line3{
     width: 1400px;
@@ -570,14 +785,18 @@ align-items: end;
     letter-spacing: 2px;
     margin-left: 20px; margin-right: 20px;
 }
+@media screen and (max-width: 768px){
+    .footer{
+        width: 768px;
+    }
+    .topright p{      
+        float:right;
+        margin-right: 30px;
+    }
+    
+}
 /*Happy end, наверное..*/
 
-@media (max-width: 900px) {
-    .body{
-      width: 100%;
-      
-    }
-  }
 
 
 
