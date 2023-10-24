@@ -206,7 +206,7 @@ main .about {
 .about h2{
     height: 40px; width: 106px;
 }
-.carousel{ border: 2px red solid;
+.carousel{ 
     margin-top: 20px;
     height: 560px; width: 1440px;
     display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start;
@@ -230,13 +230,19 @@ main .about__pagination{
     cursor: pointer;
     height: 16px; width: 16px;
     margin: 0 2px;
-    background-color: #0C0C0E;
+    background:#000;
     border-radius: 50%;
     display: inline-block;
+    transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
-    background-color: #BB945F;
-  }
+.dot:active,
+.dot:hover{
+    background:#BB945F;
+}
+.fourdot,
+.fivedot{
+    display: none;
+}
 @media screen and (max-width: 768px){
     main .welkome{
         width: 768px; height: 600px; 
@@ -277,11 +283,11 @@ main .about__pagination{
         width: auto;
         margin: 25px 0 0 0;
     }
-    .dotnone{
+    .fourdot,
+    .fivedot{
         cursor: pointer;
         height: 16px; width: 16px;
         margin: 0 2px;
-        background-color: #0C0C0E;
         border-radius: 50%;
         display: inline-block;
     }
@@ -410,7 +416,6 @@ main .favorites{
 main .favorites__item{
     display:flex;
     justify-content: center;
-    
 }
 }
 /*Блок с книжками*/
@@ -872,18 +877,34 @@ align-items: end;
 .bttn-close{
     position: absolute;
     margin-top: 15px; margin-left: 215px;
+    display:block; 
+    width: 19px; height: 19px;
+    cursor: pointer;
 }
 /*////////////////////////*/
-/*Открытие логина*/
-.modal-login{ 
+/*Модалки, оверлей*/
+.modal-login,
+.modal-register,
+.modal-my-profile
+{ 
     visibility: hidden;
-    background: #FFF;
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 100%;
+    position:absolute;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0, 0.5);   
+    overflow: hidden;
+}
+/*Открытие логина*/
+.modal-login__content{
+    background-color: #FFF;
     display:flex;
     width: 250px; height: 262px;
     flex-direction: column;
     align-items: center; 
     position: absolute;
-    left: 40%; top:40%;
+    left: 50%; top:50%;
+    transform: translate(-50%); 
 }
 .modal-login h2{
     color: #000;
@@ -929,13 +950,12 @@ align-items: end;
 }
 /*////////////////////////*/
 /*Открытие регистрации*/
-.modal-register{
-    visibility: hidden;
+.modal-register__content{
     width: 250px; height: 382px;
     background: #FFF;
     display:flex; flex-direction: column;
     position: absolute;
-    left: 50%; top:50%;
+    transform: translate(-50%); 
 }
 .modal-register h2{
     color: #000;
@@ -981,13 +1001,13 @@ align-items: end;
 }
 /*////////////////////////*/
 /*MYPROFILE*/
-.modal-my-profile{ 
+.modal-my-profile__content{
     position: absolute;
     left: 50%; top:50%;
-    visibility: hidden;
     width: 600px; height: 400px;
     background: #FFF; 
     display: flex; justify-content: space-around;
+    transform: translate(-50%, -50%); 
 }
 #bttn-close-profile{
     width: 15px;

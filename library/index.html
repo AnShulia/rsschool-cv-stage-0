@@ -54,15 +54,14 @@
                 </div>
                 <button class="arrow next"><img src="./assets/svg/carret-right.svg" alt="arrow"></button>
             </div>
-            <div>
-                <div class="about__pagination">
-                    <span class="dot onedot"></span> 
+            <div class="about__pagination">
+                    <span class="dot onedot active"></span> 
                     <span class="dot twodot"></span> 
-                    <span class="dot treedot" onclick="currentSlide(3)"></span> 
-                    <span class="dotnone" onclick="currentSlide(4)" ></span> 
-                    <span class="dotnone" onclick="currentSlide(5)"></span> 
-                  </div>
+                    <span class="dot treedot"></span> 
+                    <span class="dot fourdot"></span> 
+                    <span class="dot fivedot"></span> 
             </div>
+            
         </section>
         <section class="favorites" id="favorites"><!--ТЗ:секция№3 favorites.-->
             <h2>Favorites</h2>
@@ -180,7 +179,7 @@
                     <h4>Get a reader card</h4>
                     <div class="digitalrightbttm">
                     <p>You will be able to see a reader card after logging into account or you can register a new account</p>
-                    <button class="bttnsign">Sign Up</button>
+                    <button class="bttnsign ">Sign Up</button>
                     <button class="bttnlog">Log in</button></div>
                 </div>
             </div>
@@ -216,7 +215,9 @@
 
 
 <!--OPEN MODAL LOGIN-->
+
     <div class="modal-login">
+        <div class="modal-login__content">
         <img src="./assets/svg/close-btn.svg" alt="bttn-close" class="bttn-close">
         <h2>LOGIN</h2>
         <label for="">E-mail or readers card</label>
@@ -225,10 +226,12 @@
         <input type="password" id="">
         <button class="open-myprofile">Log In</button>
         <p>Dont have an account?</p>
-        <p>Register</p>  
+        <p>Register</p> 
+    </div> 
     </div>
 <!--OPEN MODAL REGISTER-->
-    <div class="modal-register">
+    <div class="modal-register ">
+        <div class="modal-register__content">
         <img src="./assets/svg/close-btn.svg" alt="bttn-close" class="bttn-close">
         <h2>Register</h2>
         <label for="f-name">First name</label>
@@ -243,8 +246,10 @@
         <p>Already have an account?</p>
         <p>Login</p>
     </div>
+    </div>
 <!--OPEN MODAL MY PROFILE-->
     <div class="modal-my-profile">
+        <div class ="modal-my-profile__content">
         <div class="left-profile">
             <div class="img-ava"></div>
             <p>John Doe</p>
@@ -306,7 +311,7 @@
                 <button>Buy</button>
                 <p>$ 25.00</p>
             </div>
-            </div>
+    </div>
 
 
   
